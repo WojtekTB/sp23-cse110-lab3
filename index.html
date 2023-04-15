@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+    <title>CSE 110 - Lab 2</title>
+    <html lang="en">
+    <meta charset="utf-8">
+    <link href="./images/favicon-example.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+        <p>Learning CS > Meetings > May</p>
+    </nav>
+    <header>
+        <h1>Lab 2 Getting Started</h1>
+        <h3>Intro to HTML/DevTools</h3>
+        <h3>06/15/2023</h3>
+    </header>
+    <section>
+        <h2>Attendance List</h2>
+        <li>Patty O’Furniture</li>
+        <li>Paddy O’Furniture</li>
+        <li>Olive Yew</li>
+        <li>Aida Bugg</li>
+        <li>Maureen Biologist</li>
+        <li>Teri Dactyl</li>
+        <li>Peg Legge</li>
+        <li>Allie Grater</li>
+        <li>Liz Erd</li>
+        <li>A. Mused</li>
+    </section>
+    <section>
+        <h2>Agenda</h2>
+        <li>Show how future labs will go</li>
+        <li>Talk about why it is important to keep up with the class</li>
+        <li>Discuss why HTML is important</li>
+    </section>
+    <div>
+        <h2>Unfinished Business</h2>
+        <li>Discuss how Lab 1 went for members.</li>
+    </div>
+    <section>
+        <h2>New Business </h2>
+        <li>Set up works for Lab 2 with everyone</li>
+    </section>
+    <div>
+        <section>
+            <h2>audio recording the meeting</h2>
+            <audio src="./video-and-audio/Test-audio-record.m4a" controls></audio>
+        </section>
+        <section>
+            <h2>video recording of the meeting</h2>
+            <span>
+                <video src="./video-and-audio/Video-recording.mov" controls></video>
+            </span>
+        </section>
+        <details>
+            <summary>Details about the video quality</summary>
+            Something went wrong and only half of the meeting was recorded. Leaving them here in case they continue to provide value.
+        </details>
+    </div>
+    
+    <p>The video is made to help you get up to speed with contents of lab 2, and help you lay the groundwork for the future labs as well.</p>
+
+    <hr>
+
+    <h2>What will the next couple labs be like?</h2>
+    <p>The next labs will focus on "client side technologies" which are sometimes called "front-end technologies". They include things like different popular libraries and other frameworks for web browsers.</p>
+    <p>Most browser technologies boil down to the <strong>three</strong> main technologies:</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Scripting
+            <ul>
+                <ol><b>JavaScript</b></ol>
+                <ol>CoffeeScript</ol>
+                <ol>black magic</ol>
+            </ul>
+        </li>
+    </ul>
+    
+    <img src="./images/front-end-tech.png">
+
+    <h2>What will we learn in this lab?</h2>
+    <p>In this lab we will get a head start on laying down the basics by learning how to use HTML, as well as your browser's DevTools (developer tools).<hr>
+        HTML helps you structure web pages both visualy and with proper <em>accessibility</em>.</p>
+    <p>Accessibility refers to how and what can access and understand your webpage. For example, a properly structured <i>HTML</i> makes it easier for things like search engines and web crawlers to find and understand your webpages.</p>
+
+    <h3>Who decides what HTML does?</h2>
+    <p><a href="https://html.spec.whatwg.org/multipage/">HTML specifications</a> is a document that compiles and describes how and what different HTML tags do. HTML tags are the name for some HTML field that denots some specific functionality. The browser companies then look at the specifications and develop their web browsers to display those tags according to the established specification.</p>
+
+    <h2>DevTools?</h2>
+    <p>Dev tools are different, but are usually pretty standard across different browsers. Because browser technologies often do not crash when they encounter an unexpected syntax, and instead try thier best to work around it, it can often make developemnt hard and unpredictable and it is thus very important to get to know how these debugging tools work and function.</p>
+    <img src="./images/dev-tools.png">
+    
+
+    <h2>Wrap Up</h2>
+    <li>Keep ahead, don't keep up by deeply learning HTML/CSS/JS</li>
+    <li>Write your HTML with structure and accessibility in mind</li>
+    <li>HTML syntax is a standard that browsers follow and so sould you</li>
+    <li>Proper HTML will bring out the best in your browser</li>
+
+    <hr>
+    <div>
+        <form>
+            <p>Found a mistake in the meeting? Send us an email and we will get it fixed!</p>
+            <div>
+                <select >
+                    <option value="">--Please choose reason--</option>
+                    <option >Found mistake</option>
+                    <option >Audio does not work</option>
+                    <option >Video does not work</option>
+                </select>
+            </div>
+            <div>
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="email">Enter your comment: </label>
+                <textarea name="emailText"required></textarea>
+            </div>
+            <div>
+                <p>Participate in a fun survey:</p>
+                <label for="ice-cream-choice">Choose a flavor:</label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+                <datalist id="ice-cream-flavors">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                    <option value="Mint">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist>
+            </div>
+            <fieldset>
+                <p>How would you rate your reading experience?</p>
+                <input type="radio" name="1" value="M">
+                <label for="1">⭐☆☆☆☆</label>
+
+                <input type="radio" name="2" value="M">
+                <label for="2">⭐⭐☆☆☆</label>
+
+                <input type="radio" name="3" value="M">
+                <label for="3">⭐⭐⭐☆☆</label>
+
+                <input type="radio" name="4" value="M">
+                <label for="4">⭐⭐⭐⭐☆</label>
+
+                <input type="radio" name="5" value="M">
+                <label for="5">⭐⭐⭐⭐⭐</label>
+              </fieldset>
+              <div>
+                  <button>Send!</button>
+              </div>
+        </form>
+    </div>
+    <hr>
+  </body>
+  <footer>
+    <p>© 2023 UCSD</p>
+  </footer>
+</html>
