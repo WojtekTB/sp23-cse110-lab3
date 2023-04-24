@@ -1,0 +1,225 @@
+.red {
+    /* Makes the thing red */
+    color: red;
+}
+
+.dark-background {
+    background-color: grey;
+}
+
+.relatively-padded {
+    padding: 0.1vh 0.1vw 0.1vh 0.1vw;
+}
+
+.absolutely-padded-10-cm {
+    padding-top: 1cm;
+    padding-left: 1cm;
+    padding-bottom: 1cm;
+    padding-right: 1cm;
+}
+
+.absolutely-margin-2-pt {
+    margin: 2pt 0pt 2pt 0pt;
+}
+
+.absolutely-margin-1-in {
+    margin-top: 1in;
+    margin-left: 1in;
+    margin-bottom: 1in;
+    margin-right: 1in;
+}
+
+.black-border-dotted {
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+.hard-to-read-text {
+    color: chartreuse;
+    text-decoration: hotpink;
+    text-align: center;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-block {
+    display: block;
+}
+
+#video_element {
+    max-height: 300px;
+    height: 30vh;
+    max-width: 600px;
+}
+
+.position-sticky {
+    position: sticky;
+}
+
+.position-relative {
+    position: relative;
+}
+
+[hoverable="true"]:hover {
+    color: red;
+}
+
+*:active {
+    color: blueviolet;
+}
+
+/* Layouts - Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-child {
+    flex-basis: 0%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+/* Layouts - Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px
+}
+
+/* apply responsive styles for multiple devices */
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* apply different styles for screens that are at least 768px wide */
+@media screen and (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-md-6:last-child {
+        margin-right: 0;
+    }
+}
+
+/* apply different font styles to make text fun to read */
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* apply responsive styles for multiple devices */
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* apply different styles for screens that are at least 768px wide */
+@media screen and (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-md-6:last-child {
+        margin-right: 0;
+    }
+}
+
+/* apply different font styles to make text fun to read */
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* apply responsive styles for multiple devices */
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* apply different styles for screens that are at least 768px wide */
+@media screen and (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-md-6:last-child {
+        margin-right: 0;
+    }
+}
+
+/* apply different font styles to make text fun to read */
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h3>p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li li {
+    list-style-type:georgian;
+}
+
+select > option{
+    color: red;
+} 
+
+input ~ label {
+    font-weight: bold;
+}
+
+img + p {
+    font-weight: bold;
+  }
+
+div{
+    align-content: center;
+  }
+
+p.red{
+    color: red;
+    outline: black;
+}

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <head>
         <title>CSE 110 - Lab 2</title>
         <meta charset="utf-8">
         <link href="./images/favicon-example.png" rel="icon">
     </head>
-    <body>
-    <nav>
+    <body class="container">
+    <nav class="position-sticky ">
         <p>Learning CS > Meetings > May</p>
     </nav>
-    <header>
+    <header class="dark-background absolutely-padded-10-cm">
         <h1>Lab 2 Getting Started</h1>
         <h3>Intro to HTML/DevTools</h3>
         <h3>06/15/2023</h3>
     </header>
-    <section>
+    <section class="relatively-padded absolutely-margin-2-pt">
         <h2>Attendance List</h2>
         <ul>
             <li>Patty O’Furniture</li>
@@ -29,7 +30,7 @@
             <li>A. Mused</li>
         </ul>
     </section>
-    <section>
+    <section class="absolutely-margin-1-in">
         <h2>Agenda</h2>
         <ul>
             <li>Show how future labs will go</li>
@@ -37,19 +38,19 @@
             <li>Discuss why HTML is important</li>
         </ul>
     </section>
-    <div>
+    <div class="black-border-dotted">
         <h2>Unfinished Business</h2>
         <ul>
             <li>Discuss how Lab 1 went for members.</li>
         </ul>
     </div>
-    <section>
+    <section class="display-inline">
         <h2>New Business </h2>
         <ul> 
-            <li>Set up works for Lab 2 with everyone</li>
+            <li class="hard-to-read-text">Set up works for Lab 2 with everyone</li>
         </ul>
     </section>
-    <div>
+    <div class="display-block">
         <section>
             <h2>audio recording the meeting</h2>
             <audio src="./video-and-audio/Test-audio-record.m4a" controls></audio>
@@ -57,7 +58,7 @@
         <section>
             <h2>video recording of the meeting</h2>
             <span>
-                <video src="./video-and-audio/Video-recording.mov" controls></video>
+                <video id="video_element" src="./video-and-audio/Video-recording.mov" controls></video>
             </span>
         </section>
         <details>
@@ -70,13 +71,13 @@
 
     <hr>
 
-    <h2>What will the next couple labs be like?</h2>
+    <h2 class="position-relative">What will the next couple labs be like?</h2>
     <p>The next labs will focus on "client side technologies" which are sometimes called "front-end technologies". They include things like different popular libraries and other frameworks for web browsers.</p>
     <p>Most browser technologies boil down to the <strong>three</strong> main technologies:</p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Scripting
+    <ul class="flex-container">
+        <li class="flex-child">HTML</li>
+        <li class="flex-child">CSS</li>
+        <li class="flex-child">Scripting
             <ol>
                 <li><b>JavaScript</b></li>
                 <li>CoffeeScript</li>
@@ -101,7 +102,7 @@
     <img src="./images/dev-tools.png" alt="https://imgs.search.brave.com/u8Cv8Bjw9RMkm2R7p-_g6z1NhbWTYcoDgUt-VwOustc/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDAxLzgy/Ni8yMjEvbGFyZ2Vf/MngvcHJvZ3Jlc3Mt/bG9hZGluZy1iYXIt/YnVmZmVyaW5nLWRv/d25sb2FkLXVwbG9h/ZC1hbmQtbG9hZGlu/Zy1pY29uLXZlY3Rv/ci5qcGc">
 
 
-    <h2>Wrap Up</h2>
+    <h2 hoverable="true">Wrap Up</h2>
     <ul>
         <li>Keep ahead, don't keep up by deeply learning HTML/CSS/JS</li>
         <li>Write your HTML with structure and accessibility in mind</li>
@@ -122,8 +123,8 @@
                 </select>
             </div>
             <div>
-                <label for="email">Enter your email: </label>
                 <input type="email" name="email" id="email" required>
+                <label for="email">Enter your email: </label>
             </div>
             <div>
                 <label for="email">Enter your comment: </label>
